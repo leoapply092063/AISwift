@@ -9,6 +9,9 @@ let package = Package(
         .package(url: "https://github.com/vapor/vapor.git", from: "4.92.0")
     ],
     targets: [
-        .executableTarget(name: "App", dependencies: [.product(name: "Vapor", package: "vapor")])
+        .executableTarget(
+            name: "App",
+            dependencies: [.product(name: "Vapor", package: "vapor")]
+        )
     ]
 )
